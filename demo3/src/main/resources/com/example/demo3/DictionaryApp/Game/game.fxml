@@ -4,9 +4,10 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.DictionaryApp.Game.gameController">
+<AnchorPane prefHeight="400.0" prefWidth="707.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.DictionaryApp.Game.gameController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="731.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -26,6 +27,9 @@
          </graphic></Button>
       <Button fx:id="start" layoutX="581.0" layoutY="166.0" mnemonicParsing="false" onAction="#start" prefHeight="69.0" prefWidth="115.0" text="Bắt đầu" />
       <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToHome" text="Back" />
-      <Text layoutX="27.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn số câu hỏi" />
+      <Text layoutX="14.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chọn số câu hỏi">
+         <font>
+            <Font name="Sans Serif Collection" size="19.0" />
+         </font></Text>
    </children>
 </AnchorPane>

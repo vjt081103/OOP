@@ -149,7 +149,7 @@ public class homeController implements Initializable {
 
     public void gototoAddWord(ActionEvent event) throws IOException {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("addWord.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/demo3/DictionaryApp/addWord.fxml"));
         Parent addWord = loader.load();
         Scene addScene = new Scene(addWord);
         addWordController addController = loader.getController();
@@ -159,16 +159,15 @@ public class homeController implements Initializable {
 
     public void gotoGame(ActionEvent event) throws IOException {
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("Game/game.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/example/demo3/DictionaryApp/Game/game.fxml"));
         Parent game = loader.load();
-        gameController gameController = loader.getController();
         Scene scene = new Scene(game);
         stage.setScene(scene);
     }
 
     public void gotoTextTranslation(ActionEvent event1) throws IOException {
         Stage stage1 = (Stage) ((Node) event1.getSource()).getScene().getWindow();
-        FXMLLoader loader1 = new FXMLLoader(getClass().getResource("GGTranslate.fxml"));
+        FXMLLoader loader1 = new FXMLLoader(getClass().getResource("/com/example/demo3/DictionaryApp/GGTranslate.fxml"));
         Parent trans = loader1.load();
         Scene TransScene = new Scene(trans);
         stage1.setScene(TransScene);

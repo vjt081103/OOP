@@ -1,0 +1,14 @@
+.button {
+    -fx-background-color: #DEDEDE;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.anchor-pane {
+    -fx-background-color: #99FFCC;
+}
+
+.text {
+    -fx-font-family: "Times New Roman";
+    -fx-font-style: italic;
+}

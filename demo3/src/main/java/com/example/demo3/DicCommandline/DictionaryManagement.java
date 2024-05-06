@@ -186,7 +186,7 @@ public class DictionaryManagement {
     }
 
     public void dictionaryExportToFile() throws IOException {
-        File file = new File("AnhViet.txt");
+        File file = new File("/com/example/demo3/DictionaryApp/AnhViet.txt");
         OutputStream outputStream = new FileOutputStream(file);
         OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
         for (int i = 0; i < dictionary.getWordsList().size(); i++) {

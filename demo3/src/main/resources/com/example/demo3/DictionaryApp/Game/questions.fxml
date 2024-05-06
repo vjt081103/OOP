@@ -4,23 +4,43 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="402.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.DictionaryApp.Game.QuestionsController">
+<AnchorPane prefHeight="402.0" prefWidth="720.0" stylesheets="@style1.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.DictionaryApp.Game.QuestionsController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../image1/question.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="96.0" layoutY="131.0" prefHeight="45.0" prefWidth="510.0">
+      <AnchorPane fx:id="apQues" layoutX="48.0" layoutY="18.0" prefHeight="354.0" prefWidth="624.0">
          <children>
-            <Text layoutX="241.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Button fx:id="button1" layoutX="344.0" layoutY="200.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
+            <Button fx:id="button2" layoutX="40.0" layoutY="200.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
+            <Text fx:id="quesTxt" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="624.0000057220459">
+               <font>
+                  <Font size="25.0" />
+               </font></Text>
+            <Button fx:id="button3" layoutX="344.0" layoutY="276.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
+            <Button fx:id="button4" layoutX="40.0" layoutY="276.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
          </children>
       </AnchorPane>
-      <Button fx:id="trueButton" layoutX="96.0" layoutY="229.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
-      <Button layoutX="372.0" layoutY="229.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
-      <Button layoutX="96.0" layoutY="301.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
-      <Button layoutX="372.0" layoutY="301.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="244.0" text="Button" />
+      <AnchorPane fx:id="apResult" prefHeight="405.0" prefWidth="720.0" visible="false">
+         <children>
+            <ImageView fitHeight="447.0" fitWidth="720.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../image1/result.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="result" layoutX="345.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" wrappingWidth="244.0000055730343">
+               <font>
+                  <Font size="85.0" />
+               </font>
+            </Text>
+            <Button layoutX="345.0" layoutY="292.0" mnemonicParsing="false" onAction="#goToHome" prefHeight="55.0" prefWidth="105.0" text="Về trang chủ" />
+            <Button layoutX="504.0" layoutY="292.0" mnemonicParsing="false" onAction="#gotoGame" prefHeight="55.0" prefWidth="105.0" text="Chơi lại" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
